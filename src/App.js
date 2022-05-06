@@ -1,5 +1,5 @@
 import React from 'react';
-import Counter from './components/Counter/Counter';
+import Counter from './components/Counter';
 
 // const colorPickerOptions = [
 //   { label: 'red', color: '#F44336' },
@@ -10,11 +10,11 @@ import Counter from './components/Counter/Counter';
 //   { label: 'indigo', color: '#3F5185' },
 // ];
 
-const App = () => {
+const App = () => (
   <>
     <h1>Состояние компонента</h1>
-    <Counter />
-  </>;
-};
+    <Counter initialValue={10} />
+  </>
+);
 
 export default App;
